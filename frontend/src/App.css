@@ -1,0 +1,145 @@
+/* Main App layout and shared classes */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: var(--accent-lime);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo span {
+  color: var(--text-primary);
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: var(--transition);
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Overall Attendance Gauge */
+.overall-gauge {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 4px;
+}
+
+.gauge-value {
+  font-size: 5rem;
+  font-weight: 950;
+  margin: 1rem 0;
+  line-height: 1;
+}
+
+/* Small components */
+.badge {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid var(--border-color);
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.badge-low { background-color: var(--accent-pink); color: white; }
+.badge-mid { background-color: var(--accent-cyan); color: #000; }
+.badge-high { background-color: var(--accent-lime); color: #000; }
+
+.onboarding-wizard {
+  max-width: 600px;
+  margin: 4rem auto;
+}
+
+.step-indicator {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step-dot {
+  height: 8px;
+  flex: 1;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.step-dot.active {
+  background: var(--accent-purple);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-weight: 500;
+  box-shadow: 3px 3px 0px 0px var(--shadow-brutal);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-purple);
+  box-shadow: 5px 5px 0px 0px var(--accent-purple);
+}
+
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.5rem;
+}

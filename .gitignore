@@ -1,0 +1,23 @@
+# Dependencies
+backend/venv/
+frontend/node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment
+.env
+backend/.env
+frontend/.env.local
+
+# Database
+skippify.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+frontend/dist/
+backend/test_output.txt
