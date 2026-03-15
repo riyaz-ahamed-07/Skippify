@@ -8,6 +8,9 @@ from contextlib import asynccontextmanager
 
 from database import init_db
 from routers import admin, student, attendance
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 @asynccontextmanager
