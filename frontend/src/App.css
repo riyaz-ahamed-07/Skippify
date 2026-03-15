@@ -1,8 +1,8 @@
 /* Main App layout and shared classes */
 .app-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem;
   min-height: 100vh;
   position: relative;
 }
@@ -85,8 +85,8 @@
 .badge-high { background-color: var(--accent-lime); color: #000; }
 
 .onboarding-wizard {
-  max-width: 600px;
-  margin: 4rem auto;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
 .step-indicator {

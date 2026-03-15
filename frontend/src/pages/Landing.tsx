@@ -22,7 +22,7 @@ export default function Landing() {
           TRACK ATTENDANCE.<br />
           <span className="text-gradient">PLAN YOUR SKIPS.</span>
         </h1>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '700px', margin: '0 auto 3rem', fontWeight: 500 }}>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', margin: '0 auto 3rem', fontWeight: 500 }}>
           Skippify helps engineering students manage their safe bunks while staying above target attendance. 
           No ERP logins. Just pure deterministic planning.
         </p>
@@ -35,7 +35,7 @@ export default function Landing() {
         </button>
       </header>
 
-      <div className="dashboard-grid" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+      <div className="dashboard-grid" style={{ margin: '0 auto' }}>
         <div className="brutal-card">
           <Zap size={40} color="var(--accent-lime)" style={{ marginBottom: '1rem' }} />
           <h3>Smart Projections</h3>
